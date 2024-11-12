@@ -1,8 +1,8 @@
-# Judul
+# ElektroMart
 
 ![Status Build](https://img.shields.io/badge/build-In_Progress-brightgreen) ![Lisensi](https://img.shields.io/badge/license-MIT-blue)
 
-website yang memudahkan teknisi non-elektro untuk mendapatkan suku cadang
+website yang memudahkan teknisi non-elektro untuk mendapatkan informasi mengenai komponen-komponen atau suku cadang dalam dunia teknik elektro.
 
 ## Daftar Isi
 
@@ -16,9 +16,11 @@ website yang memudahkan teknisi non-elektro untuk mendapatkan suku cadang
 
 ## Fitur
 
-- Fitur 1
-- Fitur 2
-- Fitur 3
+- **Keranjang belanja**: Halaman untuk melihat harga dari barang yang ditambahkan ke keranjang.
+- **Pencarian produk**: Membantu mencari produk.
+- **Sortir**: Mengurutkan barang berdasarkan kriteria tertentu.
+- **Bantuan**: Berisi informasi mengenai bantuan untuk memudahkan pemakaian website.
+- **Tentang kami**: Informasi mengenai pengembang website ini.
 
 ## Prasyarat
 
@@ -53,5 +55,5 @@ Proyek ini dilisensikan di bawah lisensi MIT - lihat file LICENSE untuk detail l
 ## Kontak
 Jika ada pertanyaan atau saran, Anda bisa menghubungi kami melalui:
 
-Email:[Alamat Email Anda]@upi.edu
-WhatsApp: +62 [Nomor WhatsApp Anda]
+Email: elektromart12@gmail.com
+WhatsApp: +6283817596942
