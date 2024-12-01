@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color:#4d606e ;
+    }
+
+li {
+    float: left;
+    }
+
+li a{
+    background-color: #4d606e;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #3fbac2;
+}
+
+.cart{
+    margin-left:auto;
+}
+
+body {
+    background-color:#f5f5f5;
+}
+
+header {
+    background-color:#3fbac2; 
+    color:#393939 ;
+    padding: 10px;
+}
+
+h1{
+    background-color: #3fbac2;
+    color: #393939;
+    font-weight: bold;
+}
+
+.header-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome{ /*Untuk teks halo pengguna*/
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.auth-links a:hover{ /*Untuk Login*/
+    text-decoration: underline;
+}
+
+p {
+    border-style: outset;
+    border-color:#3fbac2 ;
+    border-width: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3fbac2;
+    color: #393939;
+    padding: 10px 20px;
+}
+
+footer .footer-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+footer ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+footer li{
+    float: none;
+}
+
+footer a{
+    text-decoration: none;
+    color:#393939;
+}
+
+.footer-nav{
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: #3fbac2;
+}
+
+.footer-nav li{
+    float: none;
+}
+
+.footer-nav a{
+    color: #393939;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.footer-nav a:hover{
+    background-color: #e2fddd;
+    color: #3fbac2;
+}
+
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#box1, #box2, #box3, #box4, #box5, #box6, #box7, #box8, #box9, #box10, #box11, #box12{
+    border: 5px solid;
+    border-color: #3fbac2;
+    background:#e2fddd ;
+    width: 250px;
+    width: 250px;
+    padding: 10px;
+}
