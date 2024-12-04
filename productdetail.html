@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ElektroMart</title>
+    <link rel="icon" type="image/web-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="../css/productdetail.css" />
+    <script src="../javascript/productlist.js" defer></script>
+    <script src="../javascript/products1.js" defer></script>
+    <script src="../javascript/products2.js" defer></script>
+    <script src="../javascript/product3.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="welcome">Hallo, (Pengguna)</div>
+        <div class="auth-links">
+          <a href="">Login</a> | <a href="">Sign Up</a>
+        </div>
+      </div>
+    </header>
+
+    <div id="product-detail-container" class="product-detail-container"></div>
+
+    <button onclick="window.history.back()">Kembali</button>
+    <!-- Tombol kembali -->
+
+    <footer>
+      <div class="footer-content">
+        <b>ELEKTROMART</b>
+        <ul class="footer-nav">
+          <li><a href="">About</a></li>
+          <li><a href="">FAQ</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const productId = localStorage.getItem("productId"); // Ambil ID produk dari localStorage
+        const product = [...products1, ...products2, ...products3].find((p) => p.id == productId);
+
+        if (product) {
+          const productDetailContainer = document.getElementById(
+            "product-detail-container"
+          );
+
+          productDetailContainer.innerHTML = `
+            <img src="${product.image}" alt="${product.name}">
+            <h3>${product.name}</h3>
+            <p>Harga: ${product.price}</p>
+            <p><strong>Deskripsi:</strong> ${product.description}</p>
+            <p><strong>Spesifikasi:</strong></p>
+            <ul>
+              ${product.specifications
+                .map((spec) => `<li>${spec}</li>`)
+                .join("")}
+            </ul>
+            <p><strong>Aplikasi:</strong></p>
+            <ul>
+              ${product.applications.map((app) => `<li>${app}</li>`).join("")}
+            </ul>
+          `;
+        } else {
+          alert("Produk tidak ditemukan!");
+        }
+      });
+    </script>
+  </body>
+</html>
