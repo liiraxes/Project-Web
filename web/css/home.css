@@ -1,153 +1,216 @@
-*{
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color:#3fbac2; 
+    color:#393939 ;
+    padding: 10px;
+  }
+  
+  h1{
+    background-color: #3fbac2;
+    color: #393939;
+    font-weight: bold;
+  }
+  
+  .header-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .welcome{ /*Untuk teks halo pengguna*/
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .auth-links a:hover{ /*Untuk Login*/
+    text-decoration: underline;
+  }
+  
+  p {
+    border-style: outset;
+    border-color:#3fbac2 ;
+    border-width: 5px;
+  }
+  
+  
+  /* Navigation Bar */
+  *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-ul {
+  }
+  
+  ul {
     display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
     background-color:#4d606e ;
     }
-
-li {
+  
+  li {
     float: left;
     }
-
-li a{
+  
+  li a{
     background-color: #4d606e;
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
-
-li a:hover{
+  }
+  
+  li a:hover{
     background-color: #3fbac2;
-}
-
-.search [type=text]{
-    padding: 5px;
-    border: none;
-}
-
-.cart{
+  }
+  
+  .cart{
     margin-left:auto;
-}
-
-body {
+  }
+  
+  body {
     background-color:#f5f5f5;
-}
-
-header {
-    background-color:#3fbac2; 
-    color:#393939 ;
-    padding: 10px;
-}
-
-h1{
-    background-color: #3fbac2;
-    color: #393939;
-    font-weight: bold;
-}
-
-.header-container{
-    display:flex;
-    justify-content: space-between;
+  }
+  
+  /* Container for Products */
+  /* Container for Products */
+  .product-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 kolom */
+    gap: 15px; /* Kurangi jarak antar elemen */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Product Card */
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Rapatkan konten vertikal */
     align-items: center;
-}
-
-.welcome{ /*Untuk teks halo pengguna*/
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.auth-links a:hover{ /*Untuk Login*/
-    text-decoration: underline;
-}
-
-p {
-    border-style: outset;
-    border-color:#3fbac2 ;
-    border-width: 5px;
-}
-
-footer {
+    background: #e2fddd;
+    border: 3px solid #3fbac2; /* Kurangi tebal border */
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px; /* Kurangi padding */
+    height: 240px; /* Tetapkan tinggi agar seragam */
+    width: auto;
+  }
+  
+  /* Gambar Produk */
+  .product-card img {
+    width: 100%; /* Penuhi lebar container */
+    max-height: 100px; /* Batasi tinggi gambar */
+    object-fit: contain; /* Pastikan gambar proporsional */
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Judul Produk */
+  .product-card h3 {
+    font-size: 11px;
+    margin: 5px 0;
+  }
+  
+  /* Deskripsi Produk */
+  .product-card p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  /* Tombol Produk */
+  .product-card button {
+    padding: 8px 12px; /* Ukuran tombol lebih kecil */
+    background-color: #3fbac2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .product-card button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .product-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  /* Footer Styling */
+  footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #3fbac2;
     color: #393939;
     padding: 10px 20px;
-}
-
-footer .footer-content{
+  }
+  
+  footer .footer-content{
     display: flex;
     justify-content: space-between;
     width: 100%;
-}
-
-
-footer ul{
+  }
+  
+  
+  footer ul{
     list-style-type: none;
     margin:0;
     padding: 0;
     display: flex;
     gap: 20px;
-}
-
-footer li{
+  }
+  
+  footer li{
     float: none;
-}
-
-footer a{
+  }
+  
+  footer a{
     text-decoration: none;
     color:#393939;
-}
-
-.footer-nav{
+  }
+  
+  .footer-nav{
     display: flex;
     gap: 10px;
     margin: 0;
     padding: 0;
     list-style-type: none;
     background-color: #3fbac2;
-}
-
-.footer-nav li{
+  }
+  
+  .footer-nav li{
     float: none;
-}
-
-.footer-nav a{
+  }
+  
+  .footer-nav a{
     color: #393939;
     text-decoration: none;
     font-weight: bold;
     background-color: transparent;
     border-radius: 5px;
     transition: background-color 0.3s;
-}
-
-.footer-nav a:hover{
+  }
+  
+  .footer-nav a:hover{
     background-color: #e2fddd;
     color: #3fbac2;
-}
-
-.container{
-    display:flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-#box1, #box2, #box3, #box4, #box5, #box6, #box7, #box8, #box9, #box10, #box11, #box12{
-    border: 5px solid;
-    border-color: #3fbac2;
-    background:#e2fddd ;
-    width: 250px;
-    width: 250px;
-    padding: 10px;
-}
+  }
