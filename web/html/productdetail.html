@@ -9,7 +9,7 @@
     <script src="../javascript/productlist.js" defer></script>
     <script src="../javascript/products1.js" defer></script>
     <script src="../javascript/products2.js" defer></script>
-    <script src="../javascript/product3.js" defer></script>
+    <script src="../javascript/products3.js" defer></script>
   </head>
 
   <body>
@@ -25,7 +25,6 @@
     <div id="product-detail-container" class="product-detail-container"></div>
 
     <button onclick="window.history.back()">Kembali</button>
-    <!-- Tombol kembali -->
 
     <footer>
       <div class="footer-content">
@@ -39,7 +38,7 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const productId = localStorage.getItem("productId"); // Ambil ID produk dari localStorage
+        const productId = localStorage.getItem("productId"); 
         const product = [...products1, ...products2, ...products3].find((p) => p.id == productId);
 
         if (product) {
