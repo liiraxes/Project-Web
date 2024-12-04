@@ -1,4 +1,3 @@
-
 const searchInput = document.getElementById('seachInput');
 const searchBtn = document.getElementById('searchBtn');
 const boxes = document.querySelectorAll('.container > div')
