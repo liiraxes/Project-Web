@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const productContainer = document.getElementById("product-container");
     const searchInput = document.getElementById("searchInput");
     const searchButton = document.getElementById("searchBtn");
-    const allProducts = [...products1, ...products2]; // Gabungkan semua produk
+    const allProducts = [...products1, ...products2, ...products3]; // Gabungkan semua produk
 
     // Fungsi untuk menampilkan produk berdasarkan array tertentu
     function displayProducts(products) {

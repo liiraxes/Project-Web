@@ -24,7 +24,7 @@ const products2 = [
         applications: [
 
         ],
-        image: "/images/resistor10k.jpg"
+        image: "/web/images/resistor10k.jpg"
     },
 
     {
@@ -45,7 +45,7 @@ const products2 = [
         applications:[
 
         ],
-        image: "/images/1K-ohm-05-5-percent.jpg"
+        image: "/web/images/1K-ohm-05-5-percent.jpg"
     },
 
     {
@@ -66,7 +66,7 @@ const products2 = [
         applications: [
 
         ],
-        image: "/images/34120462_c4e1cb14-9ef1-45bb-95cc-e96b230f4bec_500_500.jpeg"
+        image: "/web/images/34120462_c4e1cb14-9ef1-45bb-95cc-e96b230f4bec_500_500.jpeg"
     },
 
     {
@@ -87,7 +87,7 @@ const products2 = [
     applications: [
 
     ],
-    image: "/images/0_fc9e2a22-1815-49e7-9a8a-eefab85837d6_700_700.jpg"
+    image: "/web/images/0_fc9e2a22-1815-49e7-9a8a-eefab85837d6_700_700.jpg"
     },
 
     {
@@ -108,7 +108,7 @@ const products2 = [
     applications: [
 
     ],
-    image: "/images/100uF.jpg"
+    image: "/web/images/100uF.jpg"
     },
         
 ]

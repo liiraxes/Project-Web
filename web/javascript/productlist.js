@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const productContainer = document.getElementById("product-container");
-    const allProducts = [...products1, ...products2];
+    const allProducts = [...products1, ...products2, ...products3];
   
     allProducts.forEach((product) => {
       const productCard = document.createElement("div");

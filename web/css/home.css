@@ -207,8 +207,8 @@ h1 {
   
   footer .footer-content{
     display: flex;
-    justify-content: space-between;
     width: 100%;
+    justify-content: right;
   }
   
   
@@ -227,6 +227,7 @@ h1 {
   footer a{
     text-decoration: none;
     color:#393939;
+    margin-right: 20px;
   }
   
   .footer-nav{
@@ -332,4 +333,8 @@ h1 {
 
 .logo img {
   width: 50px;
+}
+
+.logo-footer {
+  width: 3%;
 }
