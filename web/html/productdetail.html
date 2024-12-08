@@ -10,14 +10,15 @@
     <script src="../javascript/products1.js" defer></script>
     <script src="../javascript/products2.js" defer></script>
     <script src="../javascript/products3.js" defer></script>
+    <script src="../javascript/searchbar.js" defer></script>
   </head>
 
   <body>
     <header>
       <div class="header-container">
-        <div class="welcome">Hallo, (Pengguna)</div>
+        <div class="welcome"></div>
         <div class="auth-links">
-          <a href="">Login</a> | <a href="">Sign Up</a>
+          <a href=""></a>
         </div>
       </div>
     </header>
@@ -38,8 +39,10 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const productId = localStorage.getItem("productId"); 
-        const product = [...products1, ...products2, ...products3].find((p) => p.id == productId);
+        const productId = localStorage.getItem("productId");
+        const product = [...products1, ...products2, ...products3].find(
+          (p) => p.id == productId
+        );
 
         if (product) {
           const productDetailContainer = document.getElementById(
