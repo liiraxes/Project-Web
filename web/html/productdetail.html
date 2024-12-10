@@ -40,7 +40,7 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const productId = localStorage.getItem("productId"); 
-        const product = [...products1, ...products2, ...products3].find((p) => p.id == productId);
+        const product = [...products1, ...products2].find((p) => p.id == productId);
 
         if (product) {
           const productDetailContainer = document.getElementById(
