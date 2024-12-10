@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventLidocument.addEventListener("DOMContentLoaded", function () {
     const productContainer = document.getElementById("product-container");
     const allProducts = [...products1, ...products2, ...products3];
   

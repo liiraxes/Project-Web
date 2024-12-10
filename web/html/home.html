@@ -3,37 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ElektroMart</title>
-    <link rel="icon" type="image/web-icon" href="/images/favicon.ico" />
+    <title>ElektroMart | Situs Berbelanja Barang Elektro</title>
+    <link rel="icon" type="image/web-icon" href="/web/images/favicon (2).ico" />
     <link rel="stylesheet" href="../css/home.css" />
     <script src="../javascript/products1.js" defer></script>
     <script src="../javascript/products2.js" defer></script>
     <script src="../javascript/products3.js" defer></script>
     <script src="../javascript/productlist.js" defer></script>
+    <script src="../javascript/searchbar.js" defer></script>
   </head>
 
   <body>
+    <div class="logo">
+      <h1 align="center">
+        <img
+          src="/web/images/elektromart56-ea.png"
+          alt="Logo ElektoMart"
+        />ELEKTROMART
+      </h1>
+    </div>
+
     <header>
       <div class="header-container">
-        <div class="welcome">Hallo, (Pengguna)</div>
-        <div class="auth-links">
-          <a href="">Login</a> | <a href="">Sign Up</a>
-        </div>
+        <nav>
+          <ul class="nav">
+            <li>
+              <a href="#"><i class="fas fa-home">Home</i></a>
+            </li>
+            <li id="search-bar-container">
+              <input type="text" id="searchInput" placeholder="Search..." />
+              <button id="searchBtn">Search</button>
+            </li>
+            <li id="sort-bar-container">
+              <select id="sortOptions">
+                <option value="default">Sort by</option>
+                <option value="priceLowHigh">Harga: Rendah ke Tinggi</option>
+                <option value="priceHighLow">Harga: Tinggi ke Rendah</option>
+                <option value="nameAZ">Nama: A-Z</option>
+                <option value="nameZA">Nama: Z-A</option>
+              </select>
+            </li>
+            <li class="cart"><a href="#"><i class="fas fa-shopping-cart">Cart</i></a></li>
+          </ul>
+        </nav>
       </div>
     </header>
 
-    <h1 align="center">ELEKTROMART</h1>
-    <ul>
-      <li><a href="">Home</a></li>
-      <li><a href="">Search</a></li>
-      <li><a href="">Cart</a></li>
-    </ul>
-
+    <div class="product-card" data-aos="fade-up">...</div>
     <div id="product-container" class="product-container"></div>
 
     <footer>
+      <img src="/web/images/elektromart56-ea.png" class="logo-footer" /><b
+        >ELEKTROMART</b
+      >
       <div class="footer-content">
-        <b>ELEKTROMART</b>
+        <span><a>&copy; 2024 by ElektroMart</a></span>
         <nav>
           <ul>
             <li><a href="home.html">Home</a></li>
