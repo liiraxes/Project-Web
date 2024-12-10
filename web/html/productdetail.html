@@ -15,7 +15,7 @@
 
   <body>
     <header>
-        <div class="header-container">
+      <div class="header-container">
         <div class="welcome"></div>
         <div class="auth-links">
           <a href=""></a>
@@ -39,8 +39,10 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const productId = localStorage.getItem("productId"); 
-        const product = [...products1, ...products2].find((p) => p.id == productId);
+        const productId = localStorage.getItem("productId");
+        const product = [...products1, ...products2, ...products3].find(
+          (p) => p.id == productId
+        );
 
         if (product) {
           const productDetailContainer = document.getElementById(
