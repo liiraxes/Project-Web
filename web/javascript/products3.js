@@ -12,6 +12,7 @@ const products1 = [
         id: 11,
         name: "MULTIMETER DIGITAL",
         price: formatToRupiah(70000),
+        rawPrice: 70000,
         description: "Multimeter digital ini dilengkapi dengan LCD dan hadir dengan design yang ringan dan kecil sehingga dapat Anda bawa kemana saja.",
         specifications: [
             "Material : ABS",
@@ -30,12 +31,11 @@ const products1 = [
         ],
         image: "../images/avometer.jpg"
     },
-
-
     {
         id: 12,
         name: "Breadboard",
         price: formatToRupiah(10000),
+        rawPrice: 10000,
         description: "Breadboard ini digunakan untuk prototyping atau pengetesan sebelum dibuat langsung ke rangkaian.",
         specifications: [
             "Solderless Breadboard 830 titik",
@@ -54,11 +54,11 @@ const products1 = [
         ],
         image: "../images/breadboard.jpg"
     },
- 
     {
         id: 13,
         name: "Jumper Cable",
         price: formatToRupiah(10000),
+        rawPrice: 10000,
         description: "Kabel jumper untuk digunakan menghubungkan dua titik dalam rangkaian elektronik, terutama di breadboard atau pada perangkat elektronik.",
         specifications: [
             "Jumlah: 40pcs",
@@ -79,6 +79,7 @@ const products1 = [
         id: 14,
         name: "SOLDER",
         price: formatToRupiah(80000),
+        rawPrice: 80000,
         description: "Solder adalah alat yang digunakan untuk menyambung atau menghubungkan dua atau lebih komponen elektronik secara permanen dengan menggunakan teknik pemanasan. ",
         specifications: [
             "Voltage : 220 V",
@@ -102,6 +103,7 @@ const products1 = [
         id: 15,
         name: "MCB (Miniature Circuit Breaker)",
         price: formatToRupiah(40000),
+        rawPrice: 40000,
         description: "MCB atau Miniature Circuit Breaker adalah komponen listrik yang berfungsi untuk memutus aliran listrik secara otomatis saat terjadi gangguan.",
         specifications: [
             "Poles description : 1P",
