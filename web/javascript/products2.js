@@ -12,6 +12,7 @@ const products2 = [
         id: 6,
         name: "Resistor 10K Ohm (10 Pcs)",
         price: formatToRupiah(2500),
+        rawPrice: 2500,
         description: "Resistor 10K Ohm 10 K 1/4W Metal Film 1/4 W watt - 10KOhm 5% 10 pcs",
         specifications: [
             "Resistance Model : 10KΩ Ohm",
@@ -31,6 +32,7 @@ const products2 = [
         id: 7,
         name: "Resistor 1K Ohm 10 Pcs",
         price: formatToRupiah(1000),
+        rawPrice: 1000,
         description: "Resistor 10K Ohm 10 K 1/4W Metal Film 1/4 W watt - 10KOhm 5% 10 pcs",
         specifications: [
             "Resistance : 1 kOhm",
@@ -52,6 +54,7 @@ const products2 = [
         id: 8,
         name: "Kapasitor Elektrolit Elko 10UF/25V",
         price: formatToRupiah(300),
+        rawPrice: 300,
         description: "CAPACITOR ELECTROLYTIC ELCO KAPASITOR ELEKTROLIT ELKO 100UF 100U 25V",
         specifications: [
             "Capacitance :10 uF",
@@ -73,6 +76,7 @@ const products2 = [
     id: 9,
     name: "Kapasitor Elektrolit Elko 10UF/50V",
     price: formatToRupiah(150),
+    rawPrice: 150,
     description: "CAPACITOR ELECTROLYTIC ELCO KAPASITOR ELEKTROLIT ELKO 10UF 10UF/50V",
     specifications: [
         "Capacitance :10 uF",
@@ -94,6 +98,7 @@ const products2 = [
     id: 10,
     name: "Kapasitor Elektrolit Elko 100UF/25V",
     price: formatToRupiah(200),
+    rawPrice: 200,
     description: "CAPACITOR ELECTROLYTIC ELCO KAPASITOR ELEKTROLIT ELKO 100UF 100U 25V",
     specifications: [
         "Capacitance : 100 uF",
