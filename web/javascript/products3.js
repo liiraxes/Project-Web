@@ -7,7 +7,7 @@ function formatToRupiah(amount) {
     }).format(amount);
 }
 
-const products1 = [
+const products3 = [
     {
         id: 11,
         name: "MULTIMETER DIGITAL",
