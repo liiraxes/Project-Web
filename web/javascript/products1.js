@@ -34,9 +34,9 @@ const products1 = [
             "Robotik",
             "Industrial"
         ],
-        image: "/web/images/arduino uno r3.jpg"
-    },
-
+        image: "/web/images/arduino uno r3.jpg",
+        link: "https://id.shp.ee/wj8N7PV" 
+    }
 
     {
         id: 2,
@@ -67,7 +67,8 @@ const products1 = [
             "Controler Suhu dan Kelembaban Alat penetas telur",
             "Controler Suhu dan Kelembaban ruangan Tanaman Jamur dll"
         ],
-        image: "/web/images/sensor_suhu.jpg"
+        image: "/web/images/sensor_suhu.jpg",
+        link: "https://id.shp.ee/ovbvsfj"
     },
  
     {
@@ -91,7 +92,8 @@ const products1 = [
             "Sensor counter pada conveyor",
             "Untuk robot penghidar rintangan"
         ],
-        image: "/web/images/sensor_halangan.jpg"
+        image: "/web/images/sensor_halangan.jpg",
+        link: "https://id.shp.ee/4jfebwq"
     },
     {
         id: 4,
@@ -117,7 +119,8 @@ const products1 = [
             "Mengukur konsumsi energi sensor IoT di lingkungan luar",
             "dll"
         ],
-        image: "/web/images/sensor_daya.jpg"
+        image: "/web/images/sensor_daya.jpg",
+        link: "https://id.shp.ee/uW6iRjv"
     },
     {
         id: 5,
@@ -139,6 +142,7 @@ const products1 = [
             "Proyek IoT atau smarthome",
             "dll"
         ],
-        image: "/web/images/sensor_cahaya.jpg"
+        image: "/web/images/sensor_cahaya.jpg",
+        link: "https://id.shp.ee/AwxkF3E"
     },
 ];
