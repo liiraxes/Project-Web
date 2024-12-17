@@ -10,10 +10,10 @@ function formatToRupiah(amount) {
 const products1 = [
     {
         id: 1,
-        name: "Arduino UNO R3 ATMEGA328P SMD CH340 ATMEGA328P TYPE-C",
+        name: "Arduino UNO R3 SMD CH340 TYPE-C",
         price: formatToRupiah(50000),
         rawPrice: 50000,
-        description: "Arduino R3 ini menggunakan IC ATMEGA328PB type SMD yang disupport IC driver FT232 yang lebih ekonomis namun tetap handal.",
+        description: "Arduino R3 ini menggunakan IC ATMEGA328PB type SMD yang disupport IC driver FT232.",
         specifications: [
             "USB PORT : TYPE C",
             "Microcontroller : ATmega328 SMD",
@@ -27,23 +27,22 @@ const products1 = [
             "Clock Speed : 16 MHz",
         ],
         applications: [
-            "Mikrokontroler",
-            "Pemrosesan sensor dan transducer",
-            "Kontrol Aktuator",
-            "Pemrosesan data",
-            "Robotik",
-            "Industrial"
+            "Platform mikrokontroler untuk pengembangan embedded system",
+            "Pemrosesan data dari sensor dan transduser",
+            "Pengontrol aktuator untuk sistem otomatisasi",
+            "Pengolahan dan pemrosesan data real-time",
+            "Sistem robotika dan otomasi"
         ],
         image: "/web/images/arduino uno r3.jpg",
         link: "https://id.shp.ee/wj8N7PV" 
-    }
+    },
 
     {
         id: 2,
-        name: "DHT22 AM2302 TEMPERATURE HUMIDITY SENSOR SUHU MODULE FOR ARDUINO",
+        name: "TEMPERATURE HUMIDITY SENSOR",
         price: formatToRupiah(25500),
         rawPrice: 25500,
-        description: "Module DHT-22 ini sudah berbentuk module, jadi ini bisa langsung dipakai, tidak perlu penambahan komponen lainnya seperti resistor ataupun kapasitor. Harga ini sudah include kabel jumper sebanyak 3 pin jenis Female-to Female sepanjang 20 cm.",
+        description: "Sensor dengan tipe Module DHT22/AM2302. Harga ini sudah include kabel jumper sebanyak 3 pin jenis Female-to Female sepanjang 20 cm.",
         specifications: [
             "Type: DHT22/AM2302.",
             "Accuracy resolution:0.1",
@@ -61,11 +60,11 @@ const products1 = [
             "Voltage : 5V"
         ],
         applications: [
-            "Alat pengukur suhu dan kelembaban",
-            "Controler Incubator",
-            "Controler Suhu dan Kelembaban ruangan Obat",
-            "Controler Suhu dan Kelembaban Alat penetas telur",
-            "Controler Suhu dan Kelembaban ruangan Tanaman Jamur dll"
+          "Alat pengukur suhu dan kelembaban",
+          "Pengontrol suhu dan kelembaban pada inkubator",
+          "Pengontrol suhu dan kelembaban ruangan penyimpanan obat",
+          "Pengontrol suhu dan kelembaban alat penetas telur",
+          "Pengontrol suhu dan kelembaban ruangan budidaya tanaman seperti jamur"
         ],
         image: "/web/images/sensor_suhu.jpg",
         link: "https://id.shp.ee/ovbvsfj"
@@ -73,10 +72,10 @@ const products1 = [
  
     {
         id: 3,
-        name: "INFRARED BARRIER OBSTACLE SENSOR HALANGAN RINTANGAN MODULE",
+        name: "INFRARED BARRIER SENSOR",
         price: formatToRupiah(4500),
         rawPrice: 4500,
-        description: "INFRARED BARRIER OBSTACLE SENSOR ini merupakan sebuah sensor pendeteksi halangan, dengan konsep pemantulan cahaya infrared pada jarak tertentu maka pantulannya akan diterima oleh photodioda yang ada pada module ini. Outputnya sendiri merupakan output logik digital high dan low , jadi lebih mudah dalam memakainya.",
+        description: "Infrared Barrier Sensor adalah sensor pendeteksi halangan yang bekerja berdasarkan prinsip pemantulan cahaya infra red. Sensor ini memancarkan sinar infra red melalui pemancar (IR LED), dan jika ada objek atau halangan di depannya, cahaya tersebut akan dipantulkan kembali. Pantulan cahaya infra red tersebut kemudian diterima oleh photodioda sebagai penerima. Sensor ini efektif untuk mendeteksi objek dalam jarak tertentu.",
         specifications: [
             "Tegangan kerja: 3-5V",
             "Output: Digital",
@@ -87,17 +86,17 @@ const products1 = [
                         
         ],
         applications: [
-            "Sensor jarak",
-            "Pendeteksi benda",
-            "Sensor counter pada conveyor",
-            "Untuk robot penghidar rintangan"
+            "Sensor jarak untuk mendeteksi objek pada jarak tertentu",
+            "Pendeteksi keberadaan benda",
+            "Sensor penghitung (counter) pada sistem konveyor",
+            "Sensor navigasi untuk robot penghindar rintangan"
         ],
         image: "/web/images/sensor_halangan.jpg",
         link: "https://id.shp.ee/4jfebwq"
     },
     {
         id: 4,
-        name: "SENSOR DAYA INA219 I2C CJMCU-219 POWER METER ARUS DAN TEGANGAN",
+        name: "INA219 I2C Power Meter - Arus dan Tegangan",
         price: formatToRupiah(31000),
         rawPrice: 31000,
         description: "SENSOR DAYA INA219 I2C CJMCU-219 adalah modul sensor untuk mengukur arus, tegangan, dan daya pada sebuah perangkat atau sirkuit.",
@@ -114,17 +113,16 @@ const products1 = [
            
         ],
         applications: [
-            "Mengukur konsumsi daya lampu LED",
-            "Sistem manajemen baterai lithium-ion pada kendaraan listrik",
-            "Mengukur konsumsi energi sensor IoT di lingkungan luar",
-            "dll"
+            "Mengukur konsumsi daya pada lampu LED",
+            "Sistem manajemen baterai lithium-ion untuk kendaraan listrik",
+            "Pengukur konsumsi energi pada sensor IoT di lingkungan luar"
         ],
         image: "/web/images/sensor_daya.jpg",
         link: "https://id.shp.ee/uW6iRjv"
     },
     {
         id: 5,
-        name: "RELAY 5V LDR LAMPU OTOMATIS MODULE PHOTOSENSITIVE RESISTANCE LIGHT DETECTION",
+        name: "Relay 5V LDR - Modul Lampu Otomatis dengan Deteksi Cahaya",
         price: formatToRupiah(24000),
         rawPrice: 24000,
         description: "modul yang menggabungkan Relay, LDR (Light Dependent Resistor), dan circuit control untuk mendeteksi cahaya secara otomatis",
@@ -138,9 +136,9 @@ const products1 = [
             "Module size: 63.5x38.5x18.5mm Module net weight: 28g"
         ],
         applications: [
-            "Sistem penerangan jalan",
-            "Proyek IoT atau smarthome",
-            "dll"
+            "Sistem penerangan jalan otomatis",
+            "Proyek IoT dan smart home untuk pengendalian cahaya",
+            "Aplikasi otomatisasi lainnya"
         ],
         image: "/web/images/sensor_cahaya.jpg",
         link: "https://id.shp.ee/AwxkF3E"
