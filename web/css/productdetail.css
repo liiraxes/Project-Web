@@ -1,148 +1,251 @@
 /* Global Styling */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5; /* Sama dengan tema utama */
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  /* Header Styling */
-  header {
-    background-color: #3fbac2;
-    color: #393939;
-    padding: 10px;
-  }
-  
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  h1 {
-    background-color: #3fbac2;
-    color: #393939;
-    font-weight: bold;
-  }
-  
-  /* Product Detail Container */
-  .product-detail-container {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #e2fddd; /* Warna seragam dengan kartu produk */
-    border: 3px solid #3fbac2; /* Sama dengan tema */
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .product-detail-container img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 5px;
-    margin: 0 auto 20px;
-    display: block;
-  }
-  
-  .product-detail-container h3 {
-    text-align: center;
-    color: #393939; /* Warna teks judul seragam */
-    margin-bottom: 10px;
-  }
-  
-  .product-detail-container p {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 10px;
-  }
-  
-  .product-detail-container ul {
-    padding-left: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .product-detail-container li {
-    margin-bottom: 5px;
-  }
-  
-  /* Back Button Styling */
-  button {
-    display: block;
-    margin: 20px auto;
-    padding: 8px 12px;
-    background-color: #3fbac2;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Footer Styling */
-  footer {
-    background-color: #3fbac2;
-    color: #393939;
-    padding: 10px 20px;
-    text-align: center;
-  }
-  
-  .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .footer-nav {
-    list-style-type: none;
-    display: flex;
-    gap: 10px;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer-nav li {
-    margin: 0 10px;
-  }
-  
-  .footer-nav a {
-    color: #393939;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .footer-nav a:hover {
-    background-color: #e2fddd;
-    color: #3fbac2;
-    border-radius: 5px;
-  }
-  
-  /* Responsiveness */
-  @media (max-width: 768px) {
-    .product-detail-container {
-      padding: 10px;
-    }
-  
-    .product-detail-container img {
-      max-width: 100%;
-    }
-  
-    button {
-      width: 80%;
-    }
-  
-    .footer-content {
-      flex-direction: column;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5; /* Sama dengan tema utama */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Styling dengan Logo dan Tombol Kembali */
+.header-container {
+  display: flex;
+  justify-content: space-between; /* Menempatkan elemen utama berjauhan */
+  align-items: center;
+  background-color: #3fbac2;
+  padding: 3px 20px;
+}
+
+/* Tombol Kembali */
+.back-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 0;
+}
+
+/* Warna ikon tombol kembali */
+.back-button {
+  color: #000000; /* Pastikan warna teks hitam */
+}
+
+
+/* Menampilkan logo dan judul ElektroMart di tengah */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1; /* Membuat elemen ini fleksibel */
+}
+
+/* Gaya untuk logo */
+.logo {
+  width: 50px;
+  margin-right: 10px;
+}
+
+/* Gaya untuk judul */
+.site-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  margin: 0;
+}
+
+/* Placeholder untuk ikon keranjang */
+.icon-cart {
+  width: 24px; /* Ukuran kosong untuk mengimbangi */
+  height: 24px;
+}
+
+/* Product Detail Container */
+.product-detail-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #e2fddd; /* Warna seragam dengan kartu produk */
+  border: 3px solid #3fbac2; /* Sama dengan tema */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-detail-container img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 5px;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+.product-detail-container h3 {
+  text-align: center;
+  color: #393939; /* Warna teks judul seragam */
+  margin-bottom: 10px;
+}
+
+.product-detail-container h4 {
+  text-align: center;
+  color: #393939; /* Warna teks judul seragam */
+  margin-bottom: 10px;
+}
+
+.product-detail-container p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.product-detail-container ul {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.product-detail-container li {
+  margin-bottom: 5px;
+}
+
+/* Back Button Styling */
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 8px 12px;
+  background-color: #3fbac2;
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Styling */
+footer {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #3FBAC2; 
+color: #393939;
+padding: 10px 20px;
+}
+
+footer .footer-content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+}
+
+footer nav ul {
+display: flex;
+gap: 15px;
+padding: 0;
+margin: 0;
+}
+
+footer nav ul li {
+list-style: none;
+}
+
+footer nav ul li a {
+text-decoration: none;
+color: #393939;
+font-weight: bold;
+}
+
+footer nav ul li a:hover {
+color: #0056b3;
+}
+
+/* Logo Styling */
+.logo img{
+  width: 50px;
+} .logo-footer {
+  width: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+header, footer {
+  text-align: center;
+}
+
+footer .footer-content {
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+footer nav ul {
+  flex-direction: column;
+  align-items: center;
+}
+}
+
+@media (max-width: 768px) {
+main {
+  margin: 15px;
+  padding: 15px;
+}
+
+header, footer {
+  padding: 15px;
+}
+
+footer .footer-content {
+  text-align: center;
+  gap: 15px;
+}
+
+footer nav ul li {
+  margin-bottom: 5px;
+}
+
+.logo img, .logo-footer {
+  width: 40px;
+}
+}
+
+@media (max-width: 480px) {
+  header, footer {
+  padding: 15px; /* Mengurangi padding untuk layar kecil */
+}
+
+.logo img, .logo-footer {
+  max-width: 100%; /* Membuat elemen gambar fleksibel */
+  height: auto;
+}
+
+.product-detail-container img {
+  max-width: 100%; /* Pastikan gambar tidak melebar */
+  height: auto;
+}
+
+
+  .header-container, .footer-content {
+      flex-direction: column; /* Susun elemen secara vertikal */
       align-items: center;
-    }
+      text-align: center;
   }
-  
+
+  .logo img, .logo-footer {
+      width: 30px; 
+  }
+
+  .product-detail-container {
+      margin: 5px;
+      padding: 10px;
+  }
+
+  .product-detail-container img {
+      max-width: 90%;
+      margin: 0 auto;
+  }
+}

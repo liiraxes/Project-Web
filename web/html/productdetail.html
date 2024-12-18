@@ -4,22 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ElektroMart</title>
-    <link rel="icon" type="image/web-icon" href="/images/favicon.ico" />
+    <link rel="icon" type="image/web-icon" href="../images/favicon (2).ico" />
     <link rel="stylesheet" href="../css/productdetail.css" />
     <script src="../javascript/productlist.js" defer></script>
     <script src="../javascript/products1.js" defer></script>
     <script src="../javascript/products2.js" defer></script>
     <script src="../javascript/products3.js" defer></script>
-    <script src="../javascript/searchbar.js" defer></script>
   </head>
 
   <body>
+    <!-- Header -->
     <header>
       <div class="header-container">
-        <div class="welcome"></div>
-        <div class="auth-links">
-          <a href=""></a>
+        <!-- Tombol Kembali -->
+        <button class="back-button" onclick="window.history.back()">
+          <svg
+            class="w-6 h-6"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m15 19-7-7 7-7"
+            />
+          </svg>
+        </button>
+
+        <!-- Logo dan Judul -->
+        <div class="logo-container">
+          <img
+            src="../images/elektromart56-ea.png"
+            alt="Logo ElektroMart"
+            class="logo"
+          />
+          <h1 class="site-title">ELEKTROMART</h1>
         </div>
+
+        <!-- Placeholder untuk ikon keranjang -->
+        <div class="icon-cart"></div>
       </div>
     </header>
 
@@ -29,11 +57,18 @@
 
     <footer>
       <div class="footer-content">
-        <b>ELEKTROMART</b>
-        <ul class="footer-nav">
-          <li><a href="">About</a></li>
-          <li><a href="">FAQ</a></li>
-        </ul>
+        <div class="footer-left">
+          <img src="../images/elektromart56-ea.png" class="logo-footer" />
+          <b>ELEKTROMART</b>
+        </div>
+        <div class="footer-copyright">&copy; 2024 by ElektroMart</div>
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </nav>
       </div>
     </footer>
 
@@ -52,7 +87,7 @@
           productDetailContainer.innerHTML = `
             <img src="${product.image}" alt="${product.name}">
             <h3>${product.name}</h3>
-            <p>Harga: ${product.price}</p>
+            <h4>Harga: ${product.price}</h4>
             <p><strong>Deskripsi:</strong> ${product.description}</p>
             <p><strong>Spesifikasi:</strong></p>
             <ul>
@@ -64,10 +99,7 @@
             <ul>
               ${product.applications.map((app) => `<li>${app}</li>`).join("")}
             </ul>
-            <ul>
-              ${product.applications.map((app) => `<li>${app}</li>`).join("")}
-            </ul>
-            <p>
+             <p>
             <a href="${product.link}" target="_blank" class="product-link">
             Beli produk ini
             </a>
