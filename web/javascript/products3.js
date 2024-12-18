@@ -35,7 +35,7 @@ const products3 = [
     {
         id: 12,
         name: "Breadrboard",
-        price: fomatToRupiah(10000),
+        price: formatToRupiah(10000),
         rawPrice: 10000,
         description: "Breadboard ini digunakan untuk prototyping atau pengetesan sebelum dibuat langsung ke rangkaian.",
         specifications: [
