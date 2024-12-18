@@ -29,12 +29,13 @@ const products3 = [
             "Memeriksa dioda dan transistor",
             "Mengecek baterai"
         ],
-        image: "../images/avometer.jpg"
+        image: "../images/avometer.jpg",
+        link: "https://shopee.co.id/MULTIMETER-DIGITAL-PROFESIONAL-AUTO-AC-DC-VOLTAGE-ORIGINAL-i.174663407.27065693377?sp_atk=c5bd31e9-4109-46f0-918a-154ae7cfb190&xptdk=c5bd31e9-4109-46f0-918a-154ae7cfb190"
     },
     {
         id: 12,
-        name: "Breadboard",
-        price: formatToRupiah(10000),
+        name: "Breadrboard",
+        price: fomatToRupiah(10000),
         rawPrice: 10000,
         description: "Breadboard ini digunakan untuk prototyping atau pengetesan sebelum dibuat langsung ke rangkaian.",
         specifications: [
@@ -52,7 +53,8 @@ const products3 = [
             "Membangun Rangkaian Analog dan Digital",
             "Sistem Kontrol dan Otomatisasi"
         ],
-        image: "../images/breadboard.jpg"
+        image: "../images/breadboard.jpg",
+        link: "https://shopee.co.id/Breadboard-MB-102-MB102-830-Point-Solderless-Bread-PCB-Project-Board-i.118074836.23378890370?sp_atk=bac72704-ac8e-4e9b-b650-6a5022994ad8&xptdk=bac72704-ac8e-4e9b-b650-6a5022994ad8"
     },
     {
         id: 13,
@@ -73,7 +75,8 @@ const products3 = [
             "Pengujian dan Perbaikan Rangkaian Elektronik",
             "Sambungan Tegangan dan Ground"
         ],
-        image: "../images/jumper cable.jpg"
+        image: "../images/jumper cable.jpg",
+        link:"https://shopee.co.id/40PCS-JUMPER-CABLE-KABEL-20CM-MALE-TO-FEMALE-DUPONT-FOR-BREADBOARD-i.62956347.1063975553?sp_atk=8a58204c-b915-439f-a5ff-aaec4038d078&xptdk=8a58204c-b915-439f-a5ff-aaec4038d078"
     },
     {
         id: 14,
@@ -97,7 +100,8 @@ const products3 = [
             "Solder dalam Pengelasan Kecil",
             "Pembuatan Alat-alat Elektronik",
         ],
-        image: "../images/solder.jpg"
+        image: "../images/solder.jpg",
+        link: "https://shopee.co.id/Solder-Murah-Dekko-60-Watt-Original-i.339765736.5777172059?sp_atk=96d2ea89-2a29-4c72-b10d-207a0eff09c1&xptdk=96d2ea89-2a29-4c72-b10d-207a0eff09c1"
     },
     {
         id: 15,
@@ -128,6 +132,8 @@ const products3 = [
             "Kendali Otomatis dan Sistem Keamanan",
             "Sistem Penyedia Listrik untuk Jaringan Telekomunikasi",
         ],
-        image: "../images/mcb.jpg"
+        image: "../images/mcb.jpg",
+        link: "https://shopee.co.id/BROCO-MCB-2-4-6-10-16-20-25-32-40-AMPERE-SNI-KUALITAS-BAGUS-ORIGINAL-i.1078184592.24203924732?sp_atk=e9d4197e-70be-4b10-a15c-c7d2ebeb75cc&xptdk=e9d4197e-70be-4b10-a15c-c7d2ebeb75cc"
+
     },
 ];
